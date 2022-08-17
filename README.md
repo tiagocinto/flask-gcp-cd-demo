@@ -12,7 +12,7 @@ For better integration, use Google Cloud Shell (create a new project).
 5- let make install packages: make install install-local install-test;  
 6- additionally, perform other make actions: make lint test format;  
 7- run flask server: python main.py;  
-8- test with: http://127.0.0.1:8080/ or http://127.0.0.1:8080/echo/hello.
+8- test with: http://127.0.0.1:8080/ or http://127.0.0.1:8080/echo/hello.  
 
 ### Deploying on GCP  ###
 1- run: gcloud app deploy;  
@@ -25,6 +25,6 @@ For better integration, use Google Cloud Shell (create a new project).
 2- go to 'Triggers' and 'new trigger';  
 3- provide a name a set the event to: push to a branch;  
 4- on source, connect to this project's repo (GitHub authentication needed);  
-5- install Cloud Build utilities (cloudbuild.yaml) on the repo and connect;  
+5- install Cloud Build utilities and connect;  
 6- confirm trigger;  
 7- on 'Settings', enable 'App Engine' and 'Service Accounts' status.
