@@ -1,7 +1,7 @@
-# Python CD Demo  
-This is a sample repo to assist continuous delivery (CD) projects using python over GCP cloud environment. Based on https://github.com/noahgift/flask-hello-coursera and https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/appengine/standard_python3/hello_world.  
+# Python's Flask CD Demo  
+This is a sample repo to assist continuous delivery (CD) python's flask projects over the GCP cloud environment (App Engine). Based on https://github.com/noahgift/flask-hello-coursera and https://github.com/GoogleCloudPlatform/python-docs-samples/tree/main/appengine/standard_python3/.  
 
-### Briefings  ###
+### General info ###
 For better integration, use Google Cloud Shell (create a new project). 
 
 ### Running this project  ###
@@ -15,7 +15,7 @@ For better integration, use Google Cloud Shell (create a new project).
 8- test with: http://127.0.0.1:8080/ or http://127.0.0.1:8080/echo/hello.  
 
 ### Deploying on GCP  ###
-1- run: gcloud app deploy;  
+1- on cloud shell, run: gcloud app deploy;  
 2- choose the region you want to deploy;  
 2- confirm info;  
 3- test deployed version: https://[project_id].uc.r.appspot.com/.
@@ -27,4 +27,5 @@ For better integration, use Google Cloud Shell (create a new project).
 4- on source, connect to this project's repo (GitHub authentication needed);  
 5- install Cloud Build utilities and connect;  
 6- confirm trigger;  
-7- on 'Settings', enable 'App Engine' and 'Service Accounts' status.
+7- on 'Settings', enable 'App Engine' and 'Service Accounts' status;  
+8- test CD confs by committing some changes to main.py.
